@@ -5,7 +5,8 @@
   }
 
   body{
-    background-color: gray;
+    background-color:bisque;
+    font-family: Roboto, sans-serif;
   }
   
   .music-player {
@@ -27,7 +28,6 @@
     position: absolute;
     top: 400px;
     left: 40px;
-    font-family: Roboto, sans-serif;
     font-weight: 600;
     font-size: 25px;
     color: var(--cor-fonte);
@@ -48,7 +48,6 @@
   }
   
   .tempo-reproducao {
-    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: var(--cor-principal);
@@ -80,5 +79,11 @@
   
   .material-symbols-outlined {
     font-variation-settings: "FILL" 1;
+  }
+
+  .back-link{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
   }
   
