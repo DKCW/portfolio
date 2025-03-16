@@ -1,0 +1,84 @@
+:root {
+    --cor-fundo: #24293e;
+    --cor-fonte: #dbe0e7;
+    --cor-principal: #83afe9;
+  }
+
+  body{
+    background-color: gray;
+  }
+  
+  .music-player {
+    margin: auto;
+    position: relative;
+    width: 500px;
+    background-color: var(--cor-fundo);
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  
+  .album {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #informacao-musica {
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--cor-fonte);
+    text-shadow: 0 0 5px var(--cor-fundo);
+  }
+  
+  #informacao-musica p {
+    margin: 0;
+  }
+  
+  #botao-menu {
+    position: absolute;
+    top: 440px;
+    left: 400px;
+    font-size: 60px;
+    background-color: var(--cor-principal);
+    border-radius: 3px;
+  }
+  
+  .tempo-reproducao {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-principal);
+    margin: 15px 0;
+  }
+  
+  .barra-reproducao {
+    width: 100%;
+    height: 3px;
+    accent-color: var(--cor-principal);
+    margin-bottom: 10px;
+  }
+  
+  .container-botoes {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--cor-principal);
+  }
+  
+  .botao {
+    font-size: 35px;
+  }
+  
+  .botao-maior {
+    font-size: 80px;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 1;
+  }
+  

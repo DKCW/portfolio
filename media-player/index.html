@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Media Player</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,pause_circle,repeat,shuffle,skip_next,skip_previous,stop,volume_up"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <img
+        src="./thumb-rick.jpg"
+        alt="Picture of the album of the song being played"
+        title="Picture of the album of the song being played"
+        class="album"
+      />
+
+      <div id="informacao-musica">
+        <p>Rick Astley</p>
+        <p>Never Gonna Give You Up</p>
+      </div>
+
+      <span class="material-symbols-outlined" id="botao-menu"> menu </span>
+
+      <p class="tempo-reproducao">0:01/9:99</p>
+
+      <input type="range" class="barra-reproducao" />
+
+      <div class="container-botoes">
+        <span class="material-symbols-outlined botao"> shuffle </span>
+        <span class="material-symbols-outlined botao"> skip_previous </span>
+        <span class="material-symbols-outlined botao botao-maior">
+          pause_circle
+        </span>
+        <span class="material-symbols-outlined botao"> stop </span>
+        <span class="material-symbols-outlined botao"> skip_next </span>
+        <span class="material-symbols-outlined botao"> repeat </span>
+        <span class="material-symbols-outlined botao"> volume_up </span>
+        <audio src="./Rick-Roll-Sound-Effect.mp3" autoplay loop></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
