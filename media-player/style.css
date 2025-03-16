@@ -5,17 +5,17 @@
   }
 
   body{
-    background-color:bisque;
+    background-color:#C0CCC2;
     font-family: Roboto, sans-serif;
   }
   
   .music-player {
-    margin: auto;
     position: relative;
-    width: 500px;
-    background-color: var(--cor-fundo);
+    margin: 25px auto;
     padding: 25px;
     box-sizing: border-box;
+    width: 500px;
+    background-color: var(--cor-fundo);
     border-radius: 15px;
   }
   
@@ -84,6 +84,6 @@
   .back-link{
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   
