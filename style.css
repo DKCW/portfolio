@@ -171,8 +171,9 @@
     border-top: 4px solid var(--highlight-color);
   
     div {
-      height: 85%;
+      height: 100%;
       padding: 50px 100px;
+      box-sizing: border-box;
       font-size: 20px;
       line-height: 1.5;
       overflow-y: auto;
