@@ -1,57 +1,286 @@
 <!DOCTYPE html>
+<!-- Na rubrica solicita lang="pt-BR", porem como fiz em ingles, deixei "en"-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to my website!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Hello world! <br />
-    I am a web developer! <br />
+    <div class="container">
+      <header>
+        <h1>Danny Wong's Portfolio Website</h1>
+        <section class="card">
+          <!-- Card Header -->
+          <div class="card-header">
+            <div class="rectangle"></div>
+            <div class="circle">
+              <img
+                src="profile-picture.jpg"
+                alt="Danny's profile picture"
+                title="Danny's profile picture"
+                class="profile-picture"
+              />
+            </div>
+          </div>
 
-    <div class="card">
-      <a href="./music-player/index.html">
-        <img
-          src="thumb_capitao_america.png"
-          alt="Music Player's thumbnail"
-          title="Music Player's thumbnail"
-          class="imagem"
-        />
-        <h2 class="titulo">Music Player</h2>
-        <p class="descricao">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugiat
-          mollitia officiis nemo totam perferendis. Consectetur ratione,
-          aspernatur doloremque, numquam perspiciatis eveniet obcaecati maiores
-          officia iste delectus at quod culpa!
-        </p>
-      </a>
+          <!-- Card Main -->
+          <div class="card-main">
+            <h2 class="name">Danny Wong</h2>
+            <h3>&lt;Web Developer/&gt;</h3>
+            <nav>
+              <a href="#about" title="Link to About section">
+                <i class="fa-solid fa-user"></i>
+                <span>About </span>
+              </a>
+              <a href="#resume" title="Link to Resume section">
+                <i class="fa-solid fa-file"></i>
+                <span>Resume</span>
+              </a>
+              <a href="#portfolio" title="Link to Portfolio section">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Portfolio</span>
+              </a>
+              <a href="#contact" title="Link to Contact section">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </nav>
+          </div>
+
+          <!-- Card Footer -->
+          <div class="card-footer"></div>
+        </section>
+      </header>
+
+      <main>
+        <!-- About Tab -->
+        <section class="main-section">
+          <div id="about">
+            <h2>About</h2>
+            <blockquote>
+              Don't just write code. Build a <span>universe</span> people want
+              to live in.
+            </blockquote>
+            <p>
+              I'm a digital astronaut, mapping the ever-expanding universe of
+              code with my trusty co-pilot, Rubbert Ducky. <br />Currently
+              navigating the constellations of HTML, CSS and JavaScript while
+              plotting courses through the treacherous asteroid belt of Data
+              Structure and Algorithms. <br />After refueling my ship with
+              <em>way</em> too much coffee, I'm off to claim some bounties in
+              the lawless outposts of LeetCode.
+            </p>
+          </div>
+
+          <!-- Resume Tab -->
+          <div id="resume">
+            <!-- Work Experience section -->
+            <h2>Work Experience</h2>
+            <dl>
+              <dt class="company">
+                Fulfillment Buyer <span class="at">@</span> Huawei Brasil
+              </dt>
+              <dt class="year">Jul / 2018 - Present</dt>
+              <dd class="description">- Supplier management through KPIs.</dd>
+              <dd class="description">
+                - Creation and management of purchase orders in ERP system.
+              </dd>
+              <dd class="description">
+                - Inventory level monitoring and management.
+              </dd>
+              <dt class="company">
+                Public Relations Assistant <span class="at">@</span> XCMG Brasil
+              </dt>
+              <dt class="year">Jul / 2015 - Jul / 2018</dt>
+              <dd class="description">
+                - Submission of proposals and bids in government bids.
+              </dd>
+              <dd class="description">
+                - Monitoring distributors participation in bids nationwide.
+              </dd>
+              <dd class="description">
+                - Management and organization of documentation for bid
+                participation.
+              </dd>
+            </dl>
+
+            <!-- Education section -->
+            <h2>Education</h2>
+            <ul>
+              <li>
+                <p class="company">
+                  Systems Analysis and Development
+                  <span class="at">@</span>
+                  Instituto Infnet
+                </p>
+                <p class="year">Jan / 2025 - Present</p>
+              </li>
+              <li>
+                <p class="company">
+                  International Economics
+                  <span class="at">@</span>
+                  Shanghai Jiaotong University
+                </p>
+                <p class="year">Sep / 2010 - Jul / 2014</p>
+              </li>
+            </ul>
+
+            <!-- Skills section -->
+            <h2>Skills</h2>
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+                <td>MS Office</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+                <td>English</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+                <td>Portuguese</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+                <td>Spanish</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Git/Github</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </td>
+                <td>Mandarin</td>
+                <td>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Portfolio Tab -->
+          <div id="portfolio">
+            <h2>Portfolio</h2>
+            <dl>
+              <dt><a href="" title="Link to Project 1">Project 1</a></dt>
+              <dd>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis a aperiam, nam nostrum sunt distinctio obcaecati sed
+                saepe ratione quod ut non, eligendi sint, id iure illum at
+                voluptate quae.
+              </dd>
+              <dt><a href="" title="Link to Project 2">Project 2</a></dt>
+              <dd>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis a aperiam, nam nostrum sunt distinctio obcaecati sed
+                saepe ratione quod ut non, eligendi sint, id iure illum at
+                voluptate quae.
+              </dd>
+              <dt><a href="" title="Link to Project 3">Project 3</a></dt>
+              <dd>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis a aperiam, nam nostrum sunt distinctio obcaecati sed
+                saepe ratione quod ut non, eligendi sint, id iure illum at
+                voluptate quae.
+              </dd>
+            </dl>
+          </div>
+
+          <!-- Contact Tab -->
+          <div id="contact">
+            <h2>Contact</h2>
+            <ul>
+              <li><strong>Whatsapp:</strong> +55(15)99138-8667</li>
+              <li><strong>E-Mail:</strong> dkcw0202@gmail.com</li>
+              <li>
+                <strong>Linkedin:</strong> linkedin.com/in/dannykochonwong
+              </li>
+              <li><strong>Github:</strong> github.com/DKCW</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer>2025 Copyright</footer>
     </div>
-
-    <div class="card">
-      <a href="./movie-card/index.html">
-        <img
-          src="thumb_capitao_america.png"
-          alt="Movie Card's thumbnail"
-          title="Movie Card's thumbnail"
-          class="imagem"
-        />
-        <h2 class="titulo">Movie Card></h2>
-        <p class="descricao">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, fugiat
-          mollitia officiis nemo totam perferendis. Consectetur ratione,
-          aspernatur doloremque, numquam perspiciatis eveniet obcaecati maiores
-          officia iste delectus at quod culpa!
-        </p>
-      </a>
-    </div>
-
     <script src="script.js"></script>
   </body>
 </html>
