@@ -192,12 +192,13 @@
   #about {
     blockquote {
       font-style: italic;
+      font-size: 25px;
       position: relative;
       margin: 90px 10% 90px 15%;
   
       span {
         color: var(--secondary-color);
-        font-weight: 600;
+        font-weight: 700;
       }
     }
     blockquote::before {
@@ -214,7 +215,7 @@
   #resume {
     .company,
     .year {
-      font-weight: 600;
+      font-weight: 700;
       margin: 0;
     }
   
@@ -237,7 +238,7 @@
   
     table {
       width: 100%;
-      font-weight: 600;
+      font-weight: 700;
   
       i {
         color: var(--secondary-color);
@@ -247,7 +248,7 @@
   
   #portfolio {
     a {
-      font-weight: 600;
+      font-weight: 700;
       color: var(--secondary-color);
     }
   
